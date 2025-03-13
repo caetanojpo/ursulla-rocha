@@ -40,7 +40,7 @@ export default function Footer() {
           </button>
         </div>
       </div>
-      <div className="flex flex-row w-full justify-evenly py-20 px-20 bg-white relative gradient-border gradient-border-top">
+      <div className="flex md:flex-row flex-col w-full justify-evenly py-20 px-20 bg-white relative gradient-border gradient-border-top">
         <div className="flex flex-col">
           <span className="text-4xl mb-7 bg-gradient-to-r from-[#E6CBAA] via-[#BF9E65] to-[#8F7C60] bg-clip-text text-transparent">
             Ursulla Rocha

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/organisms/header";
 import Footer from "@/components/organisms/footer";
+import { MobileProvider } from "@/components/context/mobileContext";
 
 export const metadata: Metadata = {
   title:
@@ -58,9 +59,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans antialiased`}>
-        <Header />
-        <main className="relative">{children}</main>
-        <Footer />
+        <MobileProvider>
+          <Header />
+          <main className="relative">{children}</main>
+          <Footer />
+        </MobileProvider>
       </body>
     </html>
   );
