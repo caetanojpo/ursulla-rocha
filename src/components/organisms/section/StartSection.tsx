@@ -28,7 +28,7 @@ export default function StartSection() {
           <div className="flex flex-col md:flex-row items-center">
             <StartButton />
             <div className="relative flex my-10">
-              <div className="flex py-4 px-24 bg-[#DFCEB4] gap-4 text-[1.2rem] text-white items-center rounded-[10px] md:rounded-0 md:rounded-r-[30px]  md:absolute left-[-50] bottom-[-50]">
+              <div className="flex py-4 px-24 bg-[#DFCEB4] gap-4 text-[1.2rem] text-white items-center rounded-[10px] md:rounded-0 md:rounded-r-[30px] md:absolute left-[-50px] bottom-[-50px]">
                 <div className="flex items-center relative">
                   <div className="absolute bottom-[-10px] left-0 w-full h-[15px] rounded-b-[30px] bg-gradient-to-r from-[#E6CBAA] via-[#BF9E65] via-40% via-[#DBC2A4] via-60% via-[#BF9E65] via-80% to-[#DFCFB6]"></div>
                   <div className="flex">
