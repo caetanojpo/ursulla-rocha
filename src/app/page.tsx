@@ -7,6 +7,15 @@ import { Download } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/curriculo_ursulla_rocha_fernandes.pdf"; // Adjust the file name accordingly
+    link.download = "curriculo_ursulla_rocha_fernandes.pdf"; // File name for the downloaded file
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const { isMobile } = useMobile();
   return (
     <div className="">
@@ -17,8 +26,8 @@ export default function Home() {
           <section className="mt-20 flex md:flex-row flex-col sm">
             <Image alt="" src="/content-IMG.png" width={700} height={800} />
             <button
-              // onClick={handleDownload}
-              className="flex items-center mt-10 md:mt-0 text-3xl justify-center bg-[#f7f0e5] rounded-[10px] text-[#bf9d61] w-[200px] h-[40px] hover:bg-blue-[#ccc9bc] transition-colors"
+              onClick={handleDownload}
+              className="flex items-center mt-10 md:mt-0 text-3xl justify-center bg-[#f7f0e5] rounded-[10px] text-[#bf9d61] w-[200px] h-[40px] hover-shine shadow-md"
             >
               <Download className="mr-2" size={20} />
               Download Lattes
