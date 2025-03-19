@@ -82,7 +82,8 @@ export default function Footer() {
           {/* Botão CADASTRAR */}
           <button
             type="submit"
-            className=" w-[40%] bg-[#dfceb4] text-white px-8 py-3 rounded-3xl shadow-sm transition-colors text-lg col-span-1 hover-shine transiton-all duration-300"
+            className={`w-[40%] ${isNotValid ? "cursor-not-allowed bg-gray-300" : "bg-[#dfceb4] cursor-pointer hover-shine"}  text-white px-8 py-3 rounded-3xl shadow-sm transition-colors text-lg col-span-1 transiton-all duration-300`}
+            disabled={isNotValid}
           >
             CADASTRAR
           </button>
