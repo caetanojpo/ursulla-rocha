@@ -116,11 +116,11 @@ export default function Footer() {
             <span className="text-3xl mb-7 text-[#8b7758]">Contato</span>
           </Link>
         </div>
-        <div className="flex flex-col">
-          <span className="text-4xl mb-7 bg-gradient-to-r from-[#E6CBAA] via-[#BF9E65] to-[#8F7C60] bg-clip-text text-transparent">
+        <div className="flex flex-col mt-8 xl:mt-0">
+          <span className="text-4xl my-7 bg-gradient-to-r from-[#E6CBAA] via-[#BF9E65] to-[#8F7C60] bg-clip-text text-transparent">
             Contato
           </span>
-          <span className="text-3xl flex-row flex mb-7 text-[#8b7758]">
+          <span className="text-3xl flex-row flex my-4 text-[#8b7758]">
             <h2 className="text-[#bf9d61]">CRN-RJ:</h2> 19100377
           </span>
 
@@ -144,7 +144,7 @@ export default function Footer() {
             target="_blank"
             className="my-4 hover:underline hover:decoration-[#8F7C60] transition-all durantion-600"
           >
-            <span className="text-3xl mb-7 text-[#8b7758] flex flex-row">
+            <span className="text-3xl  text-[#8b7758] flex flex-row">
               <Icon
                 icon="mdi:whatsapp"
                 width="24"
@@ -159,7 +159,7 @@ export default function Footer() {
             target="_blank"
             className="my-4 hover:underline hover:decoration-[#8F7C60] transition-all durantion-600"
           >
-            <span className="text-3xl mb-7 text-[#8b7758] flex flex-row">
+            <span className="text-3xl  text-[#8b7758] flex flex-row">
               <Icon
                 icon="carbon:email"
                 width="24"

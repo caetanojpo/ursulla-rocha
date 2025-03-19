@@ -21,13 +21,13 @@ export default function Home() {
     <div className="">
       <main className="flex flex-col ">
         {!isMobile && <HeaderHome />}
-        <div className="pl-5 pr-5 md:pl-20 py-20 md:pr-96 w-full border-b-2 border-b-[#f7f0e5]">
+        <div className="pl-5 pr-5 xl:pl-20 py-20 xl:pr-96 w-full border-b-2 border-b-[#f7f0e5]">
           <SobreMim />
-          <section className="mt-20 flex md:flex-row flex-col sm">
+          <section className="mt-20 flex xl:flex-row flex-col sm">
             <Image alt="" src="/content-IMG.png" width={700} height={800} />
             <button
               onClick={handleDownload}
-              className="flex items-center mt-10 md:mt-0 text-3xl justify-center bg-[#f7f0e5] rounded-[10px] text-[#bf9d61] w-[200px] h-[40px] hover-shine shadow-md"
+              className="flex items-center mt-10 xl:mt-0 text-3xl justify-center bg-[#f7f0e5] rounded-[10px] text-[#bf9d61] w-[200px] h-[40px] hover-shine shadow-xl"
             >
               <Download className="mr-2" size={20} />
               Download Lattes
@@ -40,8 +40,8 @@ export default function Home() {
             </span>
             <div>
               <div className="flex flex-row content-center mb-2 mt-10">
-                <Image alt="" src="/icon-nutri.png" width={30} height={30} />
-                <p className=" bg-gradient-to-r text-center ml-5 mt-2 from-[#E6CBAA] via-[#BF9E65] to-[#8F7C60] bg-clip-text text-transparent text-3xl font-[Tenor Sans]">
+                <Image alt="" src="/icon-nutri.png" width={30} height={30} className='hidden xl:flex' />
+                <p className=" bg-gradient-to-r text-left xl:text-center xl:ml-5 mt-2 from-[#E6CBAA] via-[#BF9E65] to-[#8F7C60] bg-clip-text text-transparent text-3xl font-[Tenor Sans]">
                   Nutrição Estética para Resultados Reais
                 </p>
               </div>
@@ -56,14 +56,15 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <div className="flex flex-row items-center md:items-none content-center mb-2 mt-10">
+              <div className="flex flex-row items-center xl:items-none content-center mb-2 mt-10">
                 <Image
                   alt=""
                   src="/icon-alimentacao.png"
                   width={30}
                   height={30}
+                  className='hidden xl:flex'
                 />
-                <p className=" bg-gradient-to-r text-center ml-5 mt-2 from-[#E6CBAA] via-[#BF9E65] to-[#8F7C60] bg-clip-text text-transparent text-3xl font-[Tenor Sans]">
+                <p className=" bg-gradient-to-r xl:text-center text-left xl:ml-5 mt-2 from-[#E6CBAA] via-[#BF9E65] to-[#8F7C60] bg-clip-text text-transparent text-3xl font-[Tenor Sans]">
                   Reeducação Alimentar e Tratamento de Desordens Nutricionais
                 </p>
               </div>
@@ -79,8 +80,8 @@ export default function Home() {
             </div>
             <div>
               <div className="flex flex-row content-center mb-2 mt-10">
-                <Image alt="" src="/icon-edu.png" width={30} height={30} />
-                <p className=" bg-gradient-to-r text-center ml-5 mt-2 from-[#E6CBAA] via-[#BF9E65] to-[#8F7C60] bg-clip-text text-transparent text-3xl font-[Tenor Sans]">
+                <Image alt="" src="/icon-edu.png" width={30} height={30} className='hidden xl:flex' />
+                <p className=" bg-gradient-to-r xl:text-center text-left xl:ml-5 mt-2 from-[#E6CBAA] via-[#BF9E65] to-[#8F7C60] bg-clip-text text-transparent text-3xl font-[Tenor Sans]">
                   Educação Nutricional: Ciência sem Mitos{" "}
                 </p>
               </div>
@@ -95,9 +96,9 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <div className="flex flex-row items-center md:items-none  content-center mb-2 mt-10">
-                <Image alt="" src="/icon-esport.png" width={30} height={30} />
-                <p className=" bg-gradient-to-r text-center ml-5 mt-2 from-[#E6CBAA] via-[#BF9E65] to-[#8F7C60] bg-clip-text text-transparent text-3xl font-[Tenor Sans]">
+              <div className="flex flex-row items-center xl:items-none  content-center mb-2 mt-10">
+                <Image alt="" src="/icon-esport.png" width={30} height={30} className='hidden xl:flex' />
+                <p className=" bg-gradient-to-r xl:text-center text-left xl:ml-5 mt-2 from-[#E6CBAA] via-[#BF9E65] to-[#8F7C60] bg-clip-text text-transparent text-3xl font-[Tenor Sans]">
                   Nutrição Esportiva Avançada para Alta Performance{" "}
                 </p>
               </div>
@@ -114,7 +115,7 @@ export default function Home() {
           </section>
         </div>
         <section
-          className="md:w-full relative pt-20"
+          className="xl:w-full relative pt-20"
           style={{ borderTop: "4px solid #f7f0e5" }}
         >
           {!isMobile ? (
@@ -134,11 +135,11 @@ export default function Home() {
               src="/ursulla-profile.png"
               width={680}
               height={600}
-              className="absolute top-[-74px] right-[0px]"
+              className="absolute xl:top-[-250px] 2xl:top-[-74px] xl:right-[-60px] 2xl:right-[0px] hidden xl:flex"
             />
           )}
         </section>
-        <section className="md:pl-20 pl-4 pr-4 py-20 md:pr-96 w-full">
+        <section className="xl:pl-20 pl-4 pr-4 py-20 xl:pr-96 w-full">
           <span className="bg-gradient-to-r from-[#E6CBAA] via-[#BF9E65] to-[#8F7C60] bg-clip-text text-transparent text-5xl font-[Tenor Sans]">
             Experiência Profissional
           </span>
@@ -178,10 +179,10 @@ export default function Home() {
           </span>
         </div>
         <section
-          className="relative gradient-border gradient-border-top w-full md:h-[900px] h-[1780px]"
+          className="relative gradient-border gradient-border-top w-full xl:h-[900px] h-[1780px] lg:h-[1300px]"
           style={{ borderBottom: "4px solid #f7f0e5", width: "100%" }}
         >
-          <div className="flex flex-col items-center w-[300px] absolute md:left-[400px] md:top-[-50px] left-[50px] top-[50px] z-[999999]">
+          <div className="flex flex-col items-center w-[300px] absolute xl:left-[300px] 2xl:left-[400px] xl:top-[-50px] left-[50px] top-[50px] z-[999999]">
             <Image alt="" src="/champion.png" width={120} height={80} />
             <span className=" text-center bg-gradient-to-r from-[#E6CBAA] via-[#BF9E65] to-[#8F7C60] bg-clip-text text-transparent text-6xl font-[Tenor Sans]">
               2014
@@ -191,7 +192,7 @@ export default function Home() {
               Internacionalde Fisiculturismo & Fitness - IFBB.
             </p>
           </div>
-          <div className="flex flex-col items-center w-[300px] absolute md:right-[400px] md:left-auto md:top-[-50px] left-[50px] top-[370px] z-[999999]">
+          <div className="flex flex-col items-center w-[300px] absolute xl:right-[400px] xl:left-auto xl:top-[-50px] left-[50px] top-[370px] z-[999999]">
             <Image alt="" src="/champion.png" width={120} height={80} />
             <span className=" text-center bg-gradient-to-r from-[#E6CBAA] via-[#BF9E65] to-[#8F7C60] bg-clip-text text-transparent text-6xl font-[Tenor Sans]">
               2015
@@ -206,10 +207,10 @@ export default function Home() {
             src="/image-champion.png"
             width={500}
             height={100}
-            className="flex absolute md:top-[200px] md:left-[280px] top-[1300px]"
+            className="flex absolute lg:top-[200px]  md:left-[100px] lg:left-[450px] xl:left-[100px] 2xl:left-[280px] top-[1300px]"
           />
-          <div className="flex flex-col items-center w-[300px] absolute md:right-[400px] md:left-auto md:top-[180px] left-[50px] top-[590px] z-[999999]">
-            <Image alt="" src="/champion-divider.png" width={120} height={80} />
+          <div className="flex flex-col items-center w-[300px] absolute xl:right-[400px] xl:left-auto xl:top-[180px] left-[50px] top-[680px] z-[999999]">
+            <Image alt="" src={isMobile ? "/champion.png" : "/champion-divider.png"} width={120} height={80} />
             <span className=" text-center bg-gradient-to-r from-[#E6CBAA] via-[#BF9E65] to-[#8F7C60] bg-clip-text text-transparent text-6xl font-[Tenor Sans]">
               2015
             </span>
@@ -218,8 +219,8 @@ export default function Home() {
               Fisiculturismo & Fitness - IFBB.
             </p>
           </div>
-          <div className="flex flex-col items-center w-[300px] absolute md:right-[400px] md:top-[480px] md:left-auto left-[50px] top-[890px] z-[999999]">
-            <Image alt="" src="/champion-divider.png" width={120} height={80} />
+          <div className="flex flex-col items-center w-[300px] absolute xl:right-[400px] xl:top-[480px] xl:left-auto left-[50px] top-[990px] z-[999999]">
+            <Image alt="" src={isMobile ? "/champion.png" : "/champion-divider.png"} width={120} height={80} />
             <span className=" text-center bg-gradient-to-r from-[#E6CBAA] via-[#BF9E65] to-[#8F7C60] bg-clip-text text-transparent text-6xl font-[Tenor Sans]">
               2015
             </span>
@@ -239,10 +240,10 @@ export default function Home() {
           </div>
         </div>
         <section
-          className="relative gradient-border gradient-border-top w-full relative md:h-[900px] h-[3100px]"
+          className="relative gradient-border gradient-border-top w-full xl:h-[900px] h-[3100px]"
           style={{ borderBottom: "4px solid #f7f0e5", width: "100%" }}
         >
-          <div className="flex flex-col items-center w-[300px] absolute md:left-[340px] md:top-[-50px]  left-[50px] top-[50px] z-[999999]">
+          <div className="flex flex-col items-center w-[300px] absolute xl:left-[340px] xl:top-[-50px]  left-[50px] top-[50px] z-[999999]">
             <Image
               alt=""
               src="/events-icon-congrat.png"
@@ -256,7 +257,7 @@ export default function Home() {
               Arnold Classic Brasil. Atleta Labrada.
             </p>
           </div>
-          <div className="flex flex-col items-center w-[300px] absolute md:left-[10px] md:top-[-50px]  left-[50px] top-[300px] z-[999999]">
+          <div className="flex flex-col items-center w-[300px] absolute xl:left-[10px] xl:top-[-50px]  left-[50px] top-[300px] z-[999999]">
             <Image
               alt=""
               src="/events-icon-congrat.png"
@@ -270,7 +271,7 @@ export default function Home() {
               Arnold Classic Brasil. Atleta Labrada.
             </p>
           </div>
-          <div className="flex flex-col items-center w-[300px] absolute md:left-[660px] md:top-[-50px] left-[50px] top-[550px] z-[999999]">
+          <div className="flex flex-col items-center w-[300px] absolute xl:left-[660px] xl:top-[-50px] left-[50px] top-[550px] z-[999999]">
             <Image
               alt=""
               src="/events-icon-congrat.png"
@@ -284,7 +285,7 @@ export default function Home() {
               Arnold Classic Brasil. Modelo Maria Gueixa
             </p>
           </div>
-          <div className="flex flex-col items-center w-[300px] absolute md:left-[960px] md:top-[-50px] left-[50px] top-[800px] z-[999999]">
+          <div className="flex flex-col items-center w-[300px] absolute xl:left-[960px] xl:top-[-50px] left-[50px] top-[800px] z-[999999]">
             <Image
               alt=""
               src="/events-icon-congrat.png"
@@ -298,16 +299,16 @@ export default function Home() {
               Expo Super Show Presença Atleta e Nutricionista
             </p>
           </div>
-          <div className="flex flex-col items-center w-[300px] absolute md:left-[960px] md:top-[180px] left-[50px] top-[1000px]  z-[999999]">
-            <Image alt="" src="/congrat-divider.png" width={120} height={80} />
+          <div className="flex flex-col items-center w-[300px] absolute xl:left-[600px] 2xl:left-[960px] xl:top-[180px] left-[50px] top-[1100px]  z-[999999]">
+            <Image alt="" src="/events-icon-congrat.png" width={120} height={80} />
             <span className=" text-center bg-gradient-to-r from-[#E6CBAA] via-[#BF9E65] to-[#8F7C60] bg-clip-text text-transparent text-6xl font-[Tenor Sans]">
               2021
             </span>
-            <p className="text-2xl mt-5 text-[#8b7758] text-center font-[Tenor Sans]">
+            <p className="text-2xl xl:text-xl 2xl:text-2xl mt-5 text-[#8b7758] text-center font-[Tenor Sans]">
               Congresso Rio Helth Nutririon
             </p>
           </div>
-          <div className="flex flex-col items-center w-[300px] absolute md:left-[1260px] md:top-[-50px] left-[50px] top-[1350px]  z-[999999]">
+          <div className="flex flex-col items-center w-[300px] absolute xl:left-[850px] xl:top-[180px] 2xl:left-[1260px] 2xl:top-[-50px] left-[50px] top-[1350px]  z-[999999]">
             <Image
               alt=""
               src="/events-icon-congrat.png"
@@ -317,21 +318,21 @@ export default function Home() {
             <span className=" text-center bg-gradient-to-r from-[#E6CBAA] via-[#BF9E65] to-[#8F7C60] bg-clip-text text-transparent text-6xl font-[Tenor Sans]">
               2022
             </span>
-            <p className="text-2xl mt-5 text-[#8b7758] text-center font-[Tenor Sans]">
+            <p className="text-2xl xl:text-xl 2xl:text-2xl mt-5 text-[#8b7758] text-center font-[Tenor Sans]">
               Congresso Muscle Contest. Presença Atleta e Nutricionista
             </p>
           </div>
 
-          <div className="flex flex-col items-center w-[300px] absolute md:left-[1260px] md:top-[180px] left-[50px] top-[1550px]  z-[999999]">
-            <Image alt="" src="/congrat-divider.png" width={120} height={80} />
+          <div className="flex flex-col items-center w-[300px] absolute xl:left-[1100px] 2xl:left-[1260px] xl:top-[180px] left-[50px] top-[1650px]  z-[999999]">
+            <Image alt="" src="/events-icon-congrat.png" width={120} height={80} />
             <span className=" text-center bg-gradient-to-r from-[#E6CBAA] via-[#BF9E65] to-[#8F7C60] bg-clip-text text-transparent text-6xl font-[Tenor Sans]">
               2022
             </span>
-            <p className="text-2xl mt-5 text-[#8b7758] text-center font-[Tenor Sans]">
+            <p className="text-2xl xl:text-xl 2xl:text-2xl mt-5 text-[#8b7758] text-center font-[Tenor Sans]">
               Congresso Rio Helth Nutririon
             </p>
           </div>
-          <div className="flex flex-col items-center w-[300px] absolute md:left-[1590px] md:top-[-50px] left-[50px] top-[1900px]  z-[999999]">
+          <div className="flex flex-col items-center w-[300px] absolute xl:left-[1590px] xl:top-[-50px] left-[50px] top-[1900px]  z-[999999]">
             <Image
               alt=""
               src="/events-icon-congrat.png"
@@ -350,10 +351,10 @@ export default function Home() {
             src="/picture-congrat.png"
             width={500}
             height={100}
-            className="flex absolute md:top-[200px] md:left-[280px] top-[2700px] "
+            className="flex absolute lg:top-[200px] lg:left-[450px] xl:left-[100px] 2xl:left-[280px] top-[2700px] "
           />
-          <div className="flex flex-col items-center w-[300px] absolute md:left-[1590px] md:top-[180px] left-[50px] top-[2090px] z-[999999]">
-            <Image alt="" src="/congrat-divider.png" width={120} height={80} />
+          <div className="flex flex-col items-center w-[300px] absolute xl:left-[1590px] xl:top-[180px] left-[50px] top-[2190px] z-[999999]">
+            <Image alt="" src="/events-icon-congrat.png" width={120} height={80} />
             <span className=" text-center bg-gradient-to-r from-[#E6CBAA] via-[#BF9E65] to-[#8F7C60] bg-clip-text text-transparent text-6xl font-[Tenor Sans]">
               2023
             </span>
@@ -361,8 +362,8 @@ export default function Home() {
               Congresso MAP Diogo Viana
             </p>
           </div>
-          <div className="flex flex-col items-center w-[300px] absolute md:left-[1590px] md:top-[480px] left-[50px] top-[2330px]  z-[999999]">
-            <Image alt="" src="/congrat-divider.png" width={120} height={80} />
+          <div className="flex flex-col items-center w-[300px] absolute xl:left-[1590px] xl:top-[400px] left-[50px] top-[2430px]  z-[999999]">
+            <Image alt="" src="/events-icon-congrat.png" width={120} height={80} />
             <span className=" text-center bg-gradient-to-r from-[#E6CBAA] via-[#BF9E65] to-[#8F7C60] bg-clip-text text-transparent text-6xl font-[Tenor Sans]">
               2023
             </span>
@@ -385,7 +386,7 @@ export default function Home() {
           {/* CARROSEL */}
         </div>
         <section
-          className="flex-col flex items-start pt-20 mt-10 md:pl-20 py-40 w-full"
+          className="flex-col flex items-start pt-20 mt-10 xl:pl-20 py-40 w-full"
           style={{ borderBottom: "4px solid #f7f0e5", width: "100%" }}
         >
           <div className="flex-col flex items-start mb-20">
@@ -396,14 +397,14 @@ export default function Home() {
               Acompanhamento Nutricional ?
             </span>
           </div>
-          <div className="w-full justify-center items-center md:ml-40">
-            <div className="md:grid md:grid-cols-2 md:gap-80">
+          <div className="w-full justify-center items-center xl:ml-40">
+            <div className="xl:grid xl:grid-cols-2 xl:gap-80">
               <Image
                 alt=""
                 src="/consult-presencial.png"
                 width={600}
                 height={600}
-                className="mb-10 md:mb-0"
+                className="mb-10 xl:mb-0"
               />
               <Image
                 alt=""
@@ -414,7 +415,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="flex-col flex items-start pt-20 mt-10 md:pl-20 py-40 w-full">
+        <section className="flex-col flex items-start  w-full">
           <FAQHome />
         </section>
       </main>
