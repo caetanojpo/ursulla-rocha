@@ -7,7 +7,7 @@ import Phases from "@/components/organisms/phases/Phases";
 import AditionalInfoList from "@/components/organisms/lists/AditionalInfoList";
 import Carousel from "@/components/molecules/carousel/Carousel";
 import StartSection from "@/components/organisms/section/StartSection";
-import FAQ from "@/components/organisms/section/FAQ";
+// import FAQ from "@/components/organisms/section/FAQ";
 
 export default function page() {
   const ResetProjectDetailsSections: ResetProjectDetailsProps[] = [
@@ -82,7 +82,7 @@ export default function page() {
         <Carousel />
       </section>
       <StartSection />
-      <FAQ />
+      {/*<FAQ />*/}
     </main>
   );
 }

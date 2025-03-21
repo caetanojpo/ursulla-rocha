@@ -2,7 +2,7 @@
 import { useMobile } from "@/components/context/mobileContext";
 import SobreMim from "@/components/organisms/aboutMy";
 import HeaderHome from "@/components/organisms/headerBannerHome";
-import FAQHome from "@/components/organisms/section/FAQHome";
+// import FAQHome from "@/components/organisms/section/FAQHome";
 import { Download } from "lucide-react";
 import Image from "next/image";
 
@@ -415,9 +415,9 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="flex-col flex items-start  w-full">
-          <FAQHome />
-        </section>
+        {/*<section className="flex-col flex items-start  w-full">*/}
+        {/*  <FAQHome />*/}
+        {/*</section>*/}
       </main>
     </div>
   );
